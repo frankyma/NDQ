@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import type { Node, Edge, NodeMouseHandler } from '@xyflow/react'
 import { TreeGraph } from './components/TreeGraph'
+import { NodePanel } from './components/NodePanel'
 
 const nodes: Node[] = [
   { id: '1', type: 'circle', data: { label: 'Root' }, position: { x: 0, y: 0 } },
@@ -20,14 +22,17 @@ const edges: Edge[] = [
   { id: 'e3-7', source: '3', target: '7' },
 ]
 
-const handleNodeClick: NodeMouseHandler = (_event, node) => {
-  console.log('Selected node:', node.id, node.data.label)
-}
-
 function App() {
+  const [selectedNode, setSelectedNode] = useState<Node | null>(null)
+
+  const handleNodeClick: NodeMouseHandler = (_event, node) => {
+    setSelectedNode(node)
+  }
+
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
+    <div style={{ width: '100vw', height: '100vh', display: 'flex' }}>
       <TreeGraph nodes={nodes} edges={edges} onNodeClick={handleNodeClick} />
+      <NodePanel node={selectedNode} onClose={() => setSelectedNode(null)} />
     </div>
   )
 }
