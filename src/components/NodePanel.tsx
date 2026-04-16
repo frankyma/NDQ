@@ -4,7 +4,8 @@ import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 import Box from '@mui/material/Box'
-import { NODE_CONTENT } from '../data/nodeContent'
+import ReactMarkdown from 'react-markdown'
+import { NODE_CONTENT } from '../content'
 
 const DRAWER_WIDTH = 380
 
@@ -25,9 +26,9 @@ export function NodePanel({ node, onClose }: NodePanelProps) {
         <Typography variant="h5">{(node?.data.label as string) ?? ''}</Typography>
         <IconButton onClick={onClose} size="small"><CloseIcon /></IconButton>
       </Box>
-      <Typography variant="body1" sx={{ lineHeight: 1.7 }}>
-        {NODE_CONTENT[node?.id ?? ''] ?? ''}
-      </Typography>
+      <Box sx={{ '& p': { mb: 1.5 }, '& ul, & ol': { pl: 2.5, mb: 1.5 }, '& li': { mb: 0.5 } }}>
+        <ReactMarkdown>{NODE_CONTENT[node?.id ?? ''] ?? ''}</ReactMarkdown>
+      </Box>
     </Drawer>
   )
 }
