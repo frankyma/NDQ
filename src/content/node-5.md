@@ -1,8 +1,18 @@
-Grandchild A1 placeholder content. Replace this with your real text.
+_I teach only two things: suffering and the end of suffering_ - Buddha
 
-A second paragraph with more detail about this node.
+Buddhism is a non-theistic religion founded by Siddhartha Gautama in India about 2500 years ago.
 
-Key points:
+While most are familiar with the 4 noble truths:
 
-- First bullet point
-- Second bullet point
+1. Suffering: (large and small) is inevitable
+1. Cause of suffering: attachment born of ignorance
+1. End of Suffering: possible by releasing attachments by knowing our true nature
+1. Path: Noble Eightfold Path
+
+Many don't realize this is part of the more fundamental teachings of reality: Three Marks of Existence
+
+- Dukkha - Suffering (expaneded in the 4 Noble Truths)
+- Anicca - Impermanence
+- Anatta - No Self
+
+Anatta, or No Self is the first foray into Buddhist Non-duality. Here recognize that the permanent, separate "I" we typically identify with, is an illusion.
