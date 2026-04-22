@@ -15,6 +15,9 @@ const nodes: Node[] = [
   { id: '9', type: 'circle', data: { label: 'Biology' }, position: { x: 0, y: 0 } },
   { id: '10', type: 'circle', data: { label: 'Physics' }, position: { x: 0, y: 0 } },
   { id: '11', type: 'circle', data: { label: 'Philosophy' }, position: { x: 0, y: 0 } },
+  { id: '12', type: 'circle', data: { label: 'Theravada' }, position: { x: 0, y: 0 } },
+  { id: '13', type: 'circle', data: { label: 'Mahayana' }, position: { x: 0, y: 0 } },
+  { id: '14', type: 'circle', data: { label: 'Vajrayana' }, position: { x: 0, y: 0 } },
 ]
 
 const edges: Edge[] = [
@@ -28,6 +31,9 @@ const edges: Edge[] = [
   { id: 'e4-9', source: '4', target: '9' },
   { id: 'e4-10', source: '4', target: '10' },
   { id: 'e4-11', source: '4', target: '11' },
+  { id: 'e5-12', source: '5', target: '12' },
+  { id: 'e5-13', source: '5', target: '13' },
+  { id: 'e5-14', source: '5', target: '14' },
 ]
 
 function App() {
