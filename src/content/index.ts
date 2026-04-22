@@ -12,6 +12,11 @@ import node11 from './node-11.md?raw'
 import node12 from './node-12.md?raw'
 import node13 from './node-13.md?raw'
 import node14 from './node-14.md?raw'
+import node15 from './node-15.md?raw'
+import node16 from './node-16.md?raw'
+import node17 from './node-17.md?raw'
+import node18 from './node-18.md?raw'
+import node19 from './node-19.md?raw'
 
 export const NODE_CONTENT: Record<string, string> = {
   '1': node1,
@@ -28,4 +33,9 @@ export const NODE_CONTENT: Record<string, string> = {
   '12': node12,
   '13': node13,
   '14': node14,
+  '15': node15,
+  '16': node16,
+  '17': node17,
+  '18': node18,
+  '19': node19,
 }

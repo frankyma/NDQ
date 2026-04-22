@@ -18,6 +18,11 @@ const nodes: Node[] = [
   { id: '12', type: 'circle', data: { label: 'Theravada' }, position: { x: 0, y: 0 } },
   { id: '13', type: 'circle', data: { label: 'Mahayana' }, position: { x: 0, y: 0 } },
   { id: '14', type: 'circle', data: { label: 'Vajrayana' }, position: { x: 0, y: 0 } },
+  { id: '15', type: 'circle', data: { label: 'Form (Rupa)' }, position: { x: 0, y: 0 } },
+  { id: '16', type: 'circle', data: { label: 'Feeling (Vedana)' }, position: { x: 0, y: 0 } },
+  { id: '17', type: 'circle', data: { label: 'Perception (Sanna)' }, position: { x: 0, y: 0 } },
+  { id: '18', type: 'circle', data: { label: 'Mental Formations (Samskara)' }, position: { x: 0, y: 0 } },
+  { id: '19', type: 'circle', data: { label: 'Consciousness (Vijnana)' }, position: { x: 0, y: 0 } },
 ]
 
 const edges: Edge[] = [
@@ -34,6 +39,11 @@ const edges: Edge[] = [
   { id: 'e5-12', source: '5', target: '12' },
   { id: 'e5-13', source: '5', target: '13' },
   { id: 'e5-14', source: '5', target: '14' },
+  { id: 'e12-15', source: '12', target: '15' },
+  { id: 'e12-16', source: '12', target: '16' },
+  { id: 'e12-17', source: '12', target: '17' },
+  { id: 'e12-18', source: '12', target: '18' },
+  { id: 'e12-19', source: '12', target: '19' },
 ]
 
 function App() {
