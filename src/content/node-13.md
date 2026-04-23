@@ -1,9 +1,7 @@
-Mahayana ("Great Vehicle") expands Buddhist practice around universal liberation.
+_Form is emptiness, emptiness is form_ - Heart Sutra
 
-Core emphasis:
+Mahayana "Great Vehicle" buddhism is primarily practiced in East Asia (China, Japan, Korea).
 
-- The bodhisattva path: awakening for the benefit of all beings
-- Compassion and wisdom as inseparable qualities
-- Rich philosophical traditions such as emptiness (sunyata) and Buddha-nature
+The major philosophical schools include Madhyamaka (emptiness), and Yogachara (mind only).
 
-It includes many schools, including Zen, Pure Land, and Tiantai, each with different methods aimed at awakening.
+In contrast to Theravada, where the path to liberation is seen as a journey, in Mahayana, particularly within Madhyamaka, Samsara and Nirvana are one and the same.

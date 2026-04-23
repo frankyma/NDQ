@@ -23,6 +23,8 @@ const nodes: Node[] = [
   { id: '17', type: 'circle', data: { label: 'Perception (Sanna)' }, position: { x: 0, y: 0 } },
   { id: '18', type: 'circle', data: { label: 'Mental Formations (Samskara)' }, position: { x: 0, y: 0 } },
   { id: '19', type: 'circle', data: { label: 'Consciousness (Vijnana)' }, position: { x: 0, y: 0 } },
+  { id: '20', type: 'circle', data: { label: 'Madhyamaka' }, position: { x: 0, y: 0 } },
+  { id: '21', type: 'circle', data: { label: 'Yogacara' }, position: { x: 0, y: 0 } },
 ]
 
 const edges: Edge[] = [
@@ -44,6 +46,8 @@ const edges: Edge[] = [
   { id: 'e12-17', source: '12', target: '17' },
   { id: 'e12-18', source: '12', target: '18' },
   { id: 'e12-19', source: '12', target: '19' },
+  { id: 'e13-20', source: '13', target: '20' },
+  { id: 'e13-21', source: '13', target: '21' },
 ]
 
 function App() {
