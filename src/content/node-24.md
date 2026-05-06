@@ -1,11 +1,18 @@
+> _All sentient beings are buddhas, but they are covered by temporary obscurations.  
+> When these are removed, they are truly buddhas enlightened._
+>
+> -- Tulku Urgyen, As It Is, Volume I: Essential Teachings from the Dzogchen Perspective
+
 Dzogchen — "Great Perfection" — is the highest teaching in the Nyingma school of Tibetan Buddhism. It points directly to the nature of mind without relying on gradual cultivation or preliminary stages.
+
+**Ground** — the foundational, empty state of being. Before the distinction of samsara and nirvana.
+
+**Rigpa** — The knowing of this ground. "Primordial awareness"
 
 The Dzogchen path comprises three aspects:
 
-- **The Base**: the original state of existence — emptiness, clarity, and compassionate energy unified. Not something to be created or attained. This is what we already are.
-- **The Path**: direct recognition of the mind's pure nature (*rigpa*) through specific Dzogchen methods — not building something new, but recognizing what has always been present.
-- **The Fruit**: the full stabilization of non-dual awareness, in which the distinction between meditation and non-meditation, path and goal, self and other, dissolves completely.
+- **The Base**: the inherent nature within the ground. Which we already are but are ignorant of.
+- **The Path**: The recognition of this nature. Specific Dzogchen pointing out methods are known to be very direct.
+- **The Fruit**: the stabilization of non-dual awarenes. Where distinction between meditation and non-meditation, and ultimately path and goal dissapear.
 
-**Rigpa** — luminous awareness — is the central term. It is the primordial ground of being: aware, empty, and unborn. It was never actually obscured; it only appeared to be.
-
-Where Madhyamaka emphasizes the emptiness of phenomena, Dzogchen emphasizes the inseparability of emptiness and luminous awareness. The ground is not a blank void but a radiant knowing that is the nature of mind itself.
+Where Madhyamaka emphasizes the emptiness of phenomena, Dzogchen emphasizes the luminous existance that remains. The ground is not a blank void but a radiance that is the nature of reality itself.

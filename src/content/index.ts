@@ -19,8 +19,6 @@ import node18 from './node-18.md?raw'
 import node19 from './node-19.md?raw'
 import node20 from './node-20.md?raw'
 import node21 from './node-21.md?raw'
-import node22 from './node-22.md?raw'
-import node23 from './node-23.md?raw'
 import node24 from './node-24.md?raw'
 import node25 from './node-25.md?raw'
 import node26 from './node-26.md?raw'
@@ -47,8 +45,6 @@ export const NODE_CONTENT: Record<string, string> = {
   '19': node19,
   '20': node20,
   '21': node21,
-  '22': node22,
-  '23': node23,
   '24': node24,
   '25': node25,
   '26': node26,

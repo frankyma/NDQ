@@ -121,31 +121,19 @@ const nodes: Node[] = [
   {
     id: "20",
     type: "circle",
-    data: { label: "Madhyamaka [AI]" },
+    data: { label: "Madhyamaka" },
     position: { x: 0, y: 0 },
   },
   {
     id: "21",
     type: "circle",
-    data: { label: "Yogacara [AI]" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "22",
-    type: "circle",
-    data: { label: "Soto Zen [AI]" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "23",
-    type: "circle",
-    data: { label: "Rinzai Zen [AI]" },
+    data: { label: "Yogacara" },
     position: { x: 0, y: 0 },
   },
   {
     id: "24",
     type: "circle",
-    data: { label: "Dzogchen [AI]" },
+    data: { label: "Dzogchen" },
     position: { x: 0, y: 0 },
   },
   {
@@ -183,8 +171,6 @@ const edges: Edge[] = [
   { id: "e12-19", source: "12", target: "19" },
   { id: "e13-20", source: "13", target: "20" },
   { id: "e13-21", source: "13", target: "21" },
-  { id: "e13-22", source: "13", target: "22" },
-  { id: "e13-23", source: "13", target: "23" },
   { id: "e14-24", source: "14", target: "24" },
   { id: "e7-25", source: "7", target: "25" },
   { id: "e7-26", source: "7", target: "26" },

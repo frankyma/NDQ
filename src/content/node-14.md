@@ -1,9 +1,13 @@
-Vajrayana ("Diamond Vehicle") is a tantric form of Buddhism, historically rooted in India and strongly developed in Tibet.
+> _From within the state of primal luminosity,  
+> Through ignorance, through clinging to the self,  
+> There manifest saṃsāra’s Various hallucinatory appearances,  
+> Which are like emanated apparitions._
+>
+> _They are perceived though they do not exist—  
+> And thence come all experiences of joy and sorrow._
 
-Core emphasis:
+-- Longchenpa, Finding Rest in Illusion
 
-- Transformation of ordinary experience into the path
-- Advanced methods such as mantra, visualization, and deity yoga
-- Strong teacher-student transmission and ritual practice
+Vajrayana, or The Diamond Vehicle, is a tantric form of Buddhism primarily practiced in Tibet.
 
-Vajrayana builds on Mahayana foundations while presenting esoteric methods intended to accelerate realization.
+The philosophy develops beyond the void proposed by nagarajuna, proposing a luminous presence underlying ultimate reality.
