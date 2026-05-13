@@ -19,7 +19,7 @@ const nodes: Node[] = [
   {
     id: "3",
     type: "circle",
-    data: { label: "Abrahamic Religion" },
+    data: { label: "Religion" },
     position: { x: 0, y: 0 },
   },
   {
@@ -148,6 +148,12 @@ const nodes: Node[] = [
     data: { label: "Richard Rohr" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "27",
+    type: "circle",
+    data: { label: "Presense of God" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -174,6 +180,7 @@ const edges: Edge[] = [
   { id: "e14-24", source: "14", target: "24" },
   { id: "e7-25", source: "7", target: "25" },
   { id: "e7-26", source: "7", target: "26" },
+  { id: "e3-27", source: "3", target: "27" },
 ];
 
 function App() {

@@ -22,6 +22,7 @@ import node21 from './node-21.md?raw'
 import node24 from './node-24.md?raw'
 import node25 from './node-25.md?raw'
 import node26 from './node-26.md?raw'
+import node27 from './node-27.md?raw'
 
 export const NODE_CONTENT: Record<string, string> = {
   '1': node1,
@@ -48,4 +49,5 @@ export const NODE_CONTENT: Record<string, string> = {
   '24': node24,
   '25': node25,
   '26': node26,
+  '27': node27,
 }
