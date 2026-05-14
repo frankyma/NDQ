@@ -1,16 +1,14 @@
-Advaita Vedanta is the non-dual school of Vedanta. It teaches that the individual self (Atman) and the absolute reality (Brahman) are not two.
+Advaita Vedanta is the non-dual school of Vedanta. Advaita means not two.
+
+It teaches that the individual self (Atman) and the absolute reality (Brahman) are one and the same.
 
 Liberation comes through direct recognition of this identity.
 
-## Core Terminology
+## The 4 Mahavakyas
 
-- **Ātman = Brahman**: individual consciousness and universal consciousness are ultimately the same
-- **Māyā**: the illusion that veils this identity, producing the appearance of separateness
-- **Moksha**: liberation — the direct recognition of one's true nature
-- _Tat tvam asi_ — "That thou art"
+The four Mahavakyas (great statements) from the Upanishads summarize the non-dual insight of Advaita:
 
-## Analogies
-
-- **Water and waves**: waves are real, but made entirely of water
-- **Ornaments and gold**: different forms, one substance
-- **Dreams**: dreamed characters appear separate, but arise from a single dreaming awareness
+- _Prajnanam Brahma_ — "Consciousness is Brahman" (Aitareya Upanishad)
+- _Aham Brahmasmi_ — "I am Brahman" (Brihadaranyaka Upanishad)
+- _Tat tvam asi_ — "That thou art" (Chandogya Upanishad)
+- _Ayam Atma Brahma_ — "This Self is Brahman" (Mandukya Upanishad)
