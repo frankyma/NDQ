@@ -193,7 +193,7 @@ const nodes: Node[] = [
   {
     id: "34",
     type: "circle",
-    data: { label: "Water and Waves" },
+    data: { label: "Ocean and Waves" },
     position: { x: 0, y: 0 },
   },
   {
@@ -205,7 +205,7 @@ const nodes: Node[] = [
   {
     id: "36",
     type: "circle",
-    data: { label: "Dream Analogy" },
+    data: { label: "Dream" },
     position: { x: 0, y: 0 },
   },
 ];

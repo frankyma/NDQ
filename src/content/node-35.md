@@ -1,3 +1,5 @@
-Rings, necklaces, and coins seem different, but all are only gold in distinct forms.
+Rings, necklaces, and coins seem different, but all are inherently gold.
 
-Advaita uses this to show that diversity of names and forms does not negate underlying unity.
+When a necklace is melted down and shaped into a crown, the gold is neither destroyed nor created.
+
+We have different names, but are made of nothing but Brahman.

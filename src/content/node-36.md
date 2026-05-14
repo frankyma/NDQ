@@ -1,3 +1,3 @@
-In a dream, many characters appear, yet all arise from one dreaming mind.
+In a dream, many characters and objects appear, yet they are all made of mind.
 
-In the same way, multiplicity in waking life appears within one non-dual consciousness.
+In waking life, all are inherently made of eternal consciousness.

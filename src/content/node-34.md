@@ -1,3 +1,5 @@
-In this analogy, the wave appears separate, but its substance is only water.
+There is no separate existence of a wave; it is made only of the ocean.
 
-Likewise, individual selves appear separate, but their reality is Brahman.
+The wave never stands still, as it is always in flow.
+
+We see ourselves as separate entities, yet we are nothing but the dance of one reality.
