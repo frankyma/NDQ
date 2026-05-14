@@ -37,7 +37,7 @@ const nodes: Node[] = [
   {
     id: "6",
     type: "circle",
-    data: { label: "Advaita Vedanta [AI]" },
+    data: { label: "Vedanta" },
     position: { x: 0, y: 0 },
   },
   {
@@ -154,6 +154,60 @@ const nodes: Node[] = [
     data: { label: "Presense of God" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "28",
+    type: "circle",
+    data: { label: "Advaita Vedanta" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "29",
+    type: "circle",
+    data: { label: "Four Yogas" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "30",
+    type: "circle",
+    data: { label: "Jñāna Yoga" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "31",
+    type: "circle",
+    data: { label: "Karma Yoga" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "32",
+    type: "circle",
+    data: { label: "Bhakti Yoga" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "33",
+    type: "circle",
+    data: { label: "Rāja Yoga" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "34",
+    type: "circle",
+    data: { label: "Water and Waves" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "35",
+    type: "circle",
+    data: { label: "Ornaments and Gold" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "36",
+    type: "circle",
+    data: { label: "Dream Analogy" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -181,6 +235,15 @@ const edges: Edge[] = [
   { id: "e7-25", source: "7", target: "25" },
   { id: "e7-26", source: "7", target: "26" },
   { id: "e3-27", source: "3", target: "27" },
+  { id: "e6-28", source: "6", target: "28" },
+  { id: "e6-29", source: "6", target: "29" },
+  { id: "e29-30", source: "29", target: "30" },
+  { id: "e29-31", source: "29", target: "31" },
+  { id: "e29-32", source: "29", target: "32" },
+  { id: "e29-33", source: "29", target: "33" },
+  { id: "e28-34", source: "28", target: "34" },
+  { id: "e28-35", source: "28", target: "35" },
+  { id: "e28-36", source: "28", target: "36" },
 ];
 
 function App() {
