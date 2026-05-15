@@ -1,6 +1,6 @@
-The four yogas are complementary paths within Vedanta:
+The four main types of practice, known as the Four Paths of Yoga, are distinct approaches designed to lead to self-realization or union with the Divine.
 
 - Jñāna Yoga (knowledge and inquiry)
 - Karma Yoga (selfless action)
-- Bhakti Yoga (devotion and love)
-- Rāja Yoga (meditation and mind-discipline)
+- Bhakti Yoga (devotion)
+- Rāja Yoga (meditation)

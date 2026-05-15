@@ -1,3 +1,7 @@
-Rāja Yoga is the path of meditation and mastery of the mind.
+Rāja Yoga is the path of meditation.
 
-It develops concentration, stillness, and direct contemplative insight.
+Single-pointed meditation sharpens our concentration.
+
+Calm abiding meditation settles the mind into a state of peaceful, non-judgemental awareness.
+
+Finally, directed mental pointers allows us to see that we are not our body-mind, but the underlying awareness.
