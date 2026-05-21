@@ -208,6 +208,12 @@ const nodes: Node[] = [
     data: { label: "Dream" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "37",
+    type: "circle",
+    data: { label: "Self vs not-self" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -244,6 +250,8 @@ const edges: Edge[] = [
   { id: "e28-34", source: "28", target: "34" },
   { id: "e28-35", source: "28", target: "35" },
   { id: "e28-36", source: "28", target: "36" },
+  { id: "e5-37", source: "5", target: "37" },
+  { id: "e6-37", source: "6", target: "37" },
 ];
 
 function App() {
