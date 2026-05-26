@@ -1,19 +1,9 @@
-## The Illusion of Solid Matter
+_We must assume behind this force the existence of a conscious and intelligent mind. This mind is the matrix of all matter._
 
-At the quantum level, particles have no definite size or location until measured. Mass itself is not intrinsic — elementary particles acquire mass through interaction with the **Higgs field**. Top quarks interact with it strongly; photons not at all. The solid, self-existing world dissolves under examination.
+— Max Planck
 
-## The Illusion of Time and Distance
+Physics at the highest level is the study of reality. Where did we come from? What are we made of? And what is our fundamental nature?
 
-Light does not experience time or distance. From a photon's frame of reference, the universe has zero size and zero duration. "Here" and "there," "now" and "then" are features of a particular observer — not of reality itself. Theories like loop quantum gravity suggest time is derivative of something more fundamental, not a basic feature of the universe.
+Philosophers have tried to climb this mountain through thought. Physics has tried to scale this through experiments on the real world.
 
-## Bell's Theorem
-
-Quantum entanglement allows correlations between particles faster than light could carry any signal. Bell's theorem proved that no theory of *local* hidden variables can explain this. The universe is non-local — separated things are not fully separate.
-
-## Quotes
-
-- *"The universe is just mindstuff."* — Sir Arthur Eddington
-- *"This Mind is the matrix of all matter."* — Max Planck
-- *"In truth there is only one mind. This is the doctrine of the Upanishads."* — Schrödinger
-- Carlo Rovelli (*Helgoland*): quantum mechanics may echo Nagarjuna — things exist only in relation, not independently
-- Brian Greene (*Until the End of Time*): Advaita Vedanta is "a poetic echo" of what physics points toward
+Physics cannot "prove" non-duality. In fact, no conscious reasoning can. That is the nature of truth, it cannot be captured by concepts. However, our study of sciences can help us see where our current beliefs are faulty and contradictory, and point us towards the truth.

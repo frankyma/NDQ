@@ -61,7 +61,7 @@ const nodes: Node[] = [
   {
     id: "10",
     type: "circle",
-    data: { label: "Physics [AI]" },
+    data: { label: "Physics" },
     position: { x: 0, y: 0 },
   },
   {
@@ -214,6 +214,30 @@ const nodes: Node[] = [
     data: { label: "Self vs not-self" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "38",
+    type: "circle",
+    data: { label: "Illusion of Solid Matter" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "39",
+    type: "circle",
+    data: { label: "Illusion of Time and Distance" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "40",
+    type: "circle",
+    data: { label: "Bell's Theorem" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "41",
+    type: "circle",
+    data: { label: "Physics Quotes" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -252,6 +276,10 @@ const edges: Edge[] = [
   { id: "e28-36", source: "28", target: "36" },
   { id: "e5-37", source: "5", target: "37" },
   { id: "e6-37", source: "6", target: "37" },
+  { id: "e10-38", source: "10", target: "38" },
+  { id: "e10-39", source: "10", target: "39" },
+  { id: "e10-40", source: "10", target: "40" },
+  { id: "e10-41", source: "10", target: "41" },
 ];
 
 function App() {

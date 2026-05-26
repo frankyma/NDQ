@@ -4,4 +4,4 @@ It asks us to focus our worldly efforts in serving others, especially those in n
 
 Swami Sarvapriyananda teaches us how we should best live.
 
-'When I close my eyes, I find peace within. When I open my eyes, my attitude is: What can I do for you?"
+'When I close my eyes, I find peace within. When I open my eyes, my attitude is: What can I do for you?" - Swami Ranganathananda
