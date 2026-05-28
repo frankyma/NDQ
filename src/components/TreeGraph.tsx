@@ -25,7 +25,6 @@ import { CIRCLE_SIZE, CircleNode } from './CircleNode'
 
 const nodeTypes: NodeTypes = { circle: CircleNode }
 const defaultEdgeOptions = { type: 'straight' }
-const CENTER_NODE_ID = '1'
 const CIRCLE_HALF = CIRCLE_SIZE / 2
 
 type SimNode = {
@@ -44,10 +43,123 @@ interface TreeGraphProps {
   onNodeClick?: NodeMouseHandler
 }
 
+function getNonDualityNodeId(nodes: Node[]): string | undefined {
+  return nodes.find((node) => node.data?.label === 'Non-Duality')?.id
+}
+
+function hexToRgb(hex: string): { r: number; g: number; b: number } {
+  const normalized = hex.replace('#', '')
+  const full =
+    normalized.length === 3
+      ? normalized
+          .split('')
+          .map((c) => `${c}${c}`)
+          .join('')
+      : normalized
+  const value = Number.parseInt(full, 16)
+  return {
+    r: (value >> 16) & 255,
+    g: (value >> 8) & 255,
+    b: value & 255,
+  }
+}
+
+function rgbToHex(r: number, g: number, b: number): string {
+  const toHex = (v: number) => Math.round(v).toString(16).padStart(2, '0')
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`
+}
+
+function lightenHex(hex: string, amount: number): string {
+  const { r, g, b } = hexToRgb(hex)
+  return rgbToHex(
+    r + (255 - r) * amount,
+    g + (255 - g) * amount,
+    b + (255 - b) * amount,
+  )
+}
+
+function withAlpha(hex: string, alpha: number): string {
+  const { r, g, b } = hexToRgb(hex)
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`
+}
+
+function getColoredNodes(rawNodes: Node[], edges: Edge[]): Node[] {
+  const branchPalette = ['#dc2626', '#2563eb', '#eab308']
+  const branchColorByLabel: Record<string, string> = {
+    'Eastern Philosophy': '#f97316',
+    Science: '#16a34a',
+  }
+  const centerStyle = {
+    background: '#c4b5fd',
+    border: '#8b5cf6',
+    color: '#1f2937',
+  }
+
+  const children = new Map<string, string[]>()
+  const nodeById = new Map(rawNodes.map((node) => [node.id, node]))
+  for (const node of rawNodes) children.set(node.id, [])
+  for (const edge of edges) {
+    children.get(edge.source)?.push(edge.target)
+  }
+
+  const rootId = getNonDualityNodeId(rawNodes)
+  const branchRoots = rootId ? children.get(rootId) ?? [] : []
+  const nodeStyle = new Map<string, { background: string; border: string; color: string }>()
+  if (rootId) {
+    nodeStyle.set(rootId, centerStyle)
+  }
+
+  branchRoots.forEach((rootId, branchIndex) => {
+    const rootNode = nodeById.get(rootId)
+    const rootLabel = (rootNode?.data?.label as string | undefined) ?? ''
+    const baseColor =
+      branchColorByLabel[rootLabel] ?? branchPalette[branchIndex % branchPalette.length]
+    const queue: Array<{ id: string; depth: number }> = [{ id: rootId, depth: 0 }]
+
+    while (queue.length > 0) {
+      const current = queue.shift()
+      if (!current) continue
+      const { id, depth } = current
+
+      if (nodeStyle.has(id)) continue
+
+      const lightenAmount = Math.min(0.82, 0.38 + depth * 0.14)
+      const softened = lightenHex(baseColor, lightenAmount)
+      nodeStyle.set(id, {
+        background: softened,
+        border: withAlpha(baseColor, 0.5),
+        color: '#111827',
+      })
+
+      const kids = children.get(id) ?? []
+      for (const kid of kids) {
+        queue.push({ id: kid, depth: depth + 1 })
+      }
+    }
+  })
+
+  return rawNodes.map((node) => {
+    const style = nodeStyle.get(node.id)
+    if (!style) return node
+    return {
+      ...node,
+      data: {
+        ...node.data,
+        ...style,
+      },
+    }
+  })
+}
+
 function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
   const simulationRef = useRef<Simulation<SimNode, SimLink> | null>(null)
   const simNodesByIdRef = useRef<Map<string, SimNode>>(new Map())
-  const initialLayout = useMemo(() => applyForceLayout(rawNodes, edges, CENTER_NODE_ID), [rawNodes, edges])
+  const styledNodes = useMemo(() => getColoredNodes(rawNodes, edges), [rawNodes, edges])
+  const nonDualityNodeId = useMemo(() => getNonDualityNodeId(styledNodes), [styledNodes])
+  const initialLayout = useMemo(
+    () => applyForceLayout(styledNodes, edges, nonDualityNodeId),
+    [styledNodes, edges, nonDualityNodeId],
+  )
   const [nodes, setNodes, onNodesChange] = useNodesState(initialLayout)
 
   useEffect(() => {
@@ -62,12 +174,6 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
       x: node.position.x + CIRCLE_HALF,
       y: node.position.y + CIRCLE_HALF,
     }))
-
-    const centerNode = simNodes.find((node) => node.id === CENTER_NODE_ID)
-    if (centerNode) {
-      centerNode.fx = 0
-      centerNode.fy = 0
-    }
 
     simNodesByIdRef.current = new Map(simNodes.map((node) => [node.id, node]))
 
@@ -113,8 +219,6 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
   }, [edges, initialLayout, setNodes])
 
   const handleNodeDragStart: NodeMouseHandler = useCallback((_event, node) => {
-    if (node.id === CENTER_NODE_ID) return
-
     const simulation = simulationRef.current
     const simNode = simNodesByIdRef.current.get(node.id)
     if (!simulation || !simNode) return
@@ -125,8 +229,6 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
   }, [])
 
   const handleNodeDrag: NodeMouseHandler = useCallback((_event, node) => {
-    if (node.id === CENTER_NODE_ID) return
-
     const simNode = simNodesByIdRef.current.get(node.id)
     if (!simNode) return
 
@@ -139,13 +241,8 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
     const simNode = simNodesByIdRef.current.get(node.id)
     if (!simulation || !simNode) return
 
-    if (node.id === CENTER_NODE_ID) {
-      simNode.fx = 0
-      simNode.fy = 0
-    } else {
-      simNode.fx = undefined
-      simNode.fy = undefined
-    }
+    simNode.fx = undefined
+    simNode.fy = undefined
 
     simulation.alphaTarget(0)
   }, [])

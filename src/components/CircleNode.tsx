@@ -1,21 +1,27 @@
 import { Handle, Position, type NodeProps } from '@xyflow/react'
 
-export const CIRCLE_SIZE = 60
+export const CIRCLE_SIZE = 130
 
 export function CircleNode({ data }: NodeProps) {
   const label = data.label as string
+  const background = (data.background as string | undefined) ?? '#fff'
+  const border = (data.border as string | undefined) ?? '#555'
+  const color = (data.color as string | undefined) ?? '#111'
   return (
     <div
       style={{
         width: CIRCLE_SIZE,
         height: CIRCLE_SIZE,
         borderRadius: '50%',
-        background: '#fff',
-        border: '2px solid #555',
+        background,
+        border: `2px solid ${border}`,
+        color,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        fontSize: 11,
+        fontSize: 16,
+        fontWeight: 600,
+        lineHeight: 1.15,
         textAlign: 'center',
         padding: 4,
         boxSizing: 'border-box',

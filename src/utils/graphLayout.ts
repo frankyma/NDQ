@@ -28,7 +28,7 @@ type SimLink = {
 export function applyForceLayout(
   nodes: Node[],
   edges: Edge[],
-  fixedCenterNodeId = '1',
+  fixedCenterNodeId?: string,
 ): Node[] {
   if (nodes.length === 0) return nodes
 
@@ -41,10 +41,12 @@ export function applyForceLayout(
     }
   })
 
-  const centerNode = simNodes.find((node) => node.id === fixedCenterNodeId)
-  if (centerNode) {
-    centerNode.fx = 0
-    centerNode.fy = 0
+  if (fixedCenterNodeId) {
+    const centerNode = simNodes.find((node) => node.id === fixedCenterNodeId)
+    if (centerNode) {
+      centerNode.fx = 0
+      centerNode.fy = 0
+    }
   }
 
   const simLinks: SimLink[] = edges.map((edge) => ({
