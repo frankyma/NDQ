@@ -1,52 +1,77 @@
-import type { Node, Edge } from '@xyflow/react'
+import type { Edge, Node } from '@xyflow/react'
+import {
+  forceCenter,
+  forceCollide,
+  forceLink,
+  forceManyBody,
+  forceSimulation,
+} from 'd3-force'
 import { CIRCLE_SIZE } from '../components/CircleNode'
 
-const RADIUS_STEP = 160
 const HALF = CIRCLE_SIZE / 2
+const INITIAL_RADIUS = 220
+const ITERATIONS = 320
 
-export function applyRadialLayout(nodes: Node[], edges: Edge[]): Node[] {
+type SimNode = {
+  id: string
+  x: number
+  y: number
+  fx?: number
+  fy?: number
+}
+
+type SimLink = {
+  source: string
+  target: string
+}
+
+export function applyForceLayout(
+  nodes: Node[],
+  edges: Edge[],
+  fixedCenterNodeId = '1',
+): Node[] {
   if (nodes.length === 0) return nodes
 
-  // Build children map and find root (node with no incoming edges)
-  const children = new Map<string, string[]>()
-  const hasParent = new Set<string>()
-  for (const node of nodes) children.set(node.id, [])
-  for (const edge of edges) {
-    children.get(edge.source)?.push(edge.target)
-    hasParent.add(edge.target)
-  }
-
-  const root = nodes.find((n) => !hasParent.has(n.id))
-  if (!root) return nodes
-
-  const positions = new Map<string, { x: number; y: number }>()
-  // Each node gets an angular sector [start, end] to distribute its children within
-  const sectors = new Map<string, { start: number; end: number }>()
-
-  positions.set(root.id, { x: -HALF, y: -HALF })
-  sectors.set(root.id, { start: 0, end: 2 * Math.PI })
-
-  let frontier = [root.id]
-  let level = 1
-
-  while (frontier.length > 0) {
-    const next: string[] = []
-    for (const id of frontier) {
-      const kids = children.get(id) ?? []
-      if (kids.length === 0) continue
-      const { start, end } = sectors.get(id)!
-      const step = (end - start) / kids.length
-      kids.forEach((kid, i) => {
-        const angle = start + step * i + step / 2
-        const r = level * RADIUS_STEP
-        positions.set(kid, { x: r * Math.cos(angle) - HALF, y: r * Math.sin(angle) - HALF })
-        sectors.set(kid, { start: start + step * i, end: start + step * (i + 1) })
-        next.push(kid)
-      })
+  const simNodes: SimNode[] = nodes.map((node, index) => {
+    const angle = (index / nodes.length) * Math.PI * 2
+    return {
+      id: node.id,
+      x: INITIAL_RADIUS * Math.cos(angle),
+      y: INITIAL_RADIUS * Math.sin(angle),
     }
-    frontier = next
-    level++
+  })
+
+  const centerNode = simNodes.find((node) => node.id === fixedCenterNodeId)
+  if (centerNode) {
+    centerNode.fx = 0
+    centerNode.fy = 0
   }
+
+  const simLinks: SimLink[] = edges.map((edge) => ({
+    source: edge.source,
+    target: edge.target,
+  }))
+
+  const simulation = forceSimulation(simNodes)
+    .force(
+      'link',
+      forceLink<SimNode, SimLink>(simLinks)
+        .id((node) => node.id)
+        .distance(140)
+        .strength(0.35),
+    )
+    .force('charge', forceManyBody().strength(-520))
+    .force('collide', forceCollide(CIRCLE_SIZE * 0.85))
+    .force('center', forceCenter(0, 0))
+    .stop()
+
+  for (let i = 0; i < ITERATIONS; i++) {
+    simulation.tick()
+  }
+
+  const positions = new Map(
+    simNodes.map((node) => [node.id, { x: node.x - HALF, y: node.y - HALF }]),
+  )
 
   return nodes.map((node) => ({
     ...node,
