@@ -1,0 +1,5 @@
+Can science find all the answers? In other words, is ultimate reality finite? Can we have a complete description of what really is going on here?
+
+I believe the answer is No. Scientific knowledge can only **describe** in more and more detail how this universe behaves, but not **explain** its fundamental nature. We first theorized that the building blocks of nature are indivisible atoms. Then we realized that atoms are made of more elementary particles, like electrons and protons. Our current limit of understanding says matter and energy are excitations of quantum fields. But what generates these fields? Why do these fields behave in the way they do? This exploration has no end.
+
+So, what is ultimately true? The only thing we can hold up to that standard is our direct experience. Your experience of seeing the color red or tasting the orange juice cannot be denied, not by anyone. Not even by an omnipotent god. This god can take away the color red or make the orange juice taste like apple juice. But the experience of **that** is as true as anything else.

@@ -67,7 +67,7 @@ const nodes: Node[] = [
   {
     id: "11",
     type: "circle",
-    data: { label: "Philosophy [AI]" },
+    data: { label: "Philosophy" },
     position: { x: 0, y: 0 },
   },
   {
@@ -238,6 +238,30 @@ const nodes: Node[] = [
     data: { label: "Physics Quotes" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "42",
+    type: "circle",
+    data: { label: "Hard Problem of Consciousness" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "43",
+    type: "circle",
+    data: { label: "Is Science Truth?" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "44",
+    type: "circle",
+    data: { label: "Free Will" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "45",
+    type: "circle",
+    data: { label: "Panpsychism and Solipsism" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -280,6 +304,10 @@ const edges: Edge[] = [
   { id: "e10-39", source: "10", target: "39" },
   { id: "e10-40", source: "10", target: "40" },
   { id: "e10-41", source: "10", target: "41" },
+  { id: "e11-42", source: "11", target: "42" },
+  { id: "e11-43", source: "11", target: "43" },
+  { id: "e11-44", source: "11", target: "44" },
+  { id: "e11-45", source: "11", target: "45" },
 ];
 
 function App() {

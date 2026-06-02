@@ -37,6 +37,10 @@ import node38 from './node-38.md?raw'
 import node39 from './node-39.md?raw'
 import node40 from './node-40.md?raw'
 import node41 from './node-41.md?raw'
+import node42 from './node-42.md?raw'
+import node43 from './node-43.md?raw'
+import node44 from './node-44.md?raw'
+import node45 from './node-45.md?raw'
 
 export const NODE_CONTENT: Record<string, string> = {
   '1': node1,
@@ -78,4 +82,8 @@ export const NODE_CONTENT: Record<string, string> = {
   '39': node39,
   '40': node40,
   '41': node41,
+  '42': node42,
+  '43': node43,
+  '44': node44,
+  '45': node45,
 }

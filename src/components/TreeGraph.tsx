@@ -90,9 +90,9 @@ function getColoredNodes(rawNodes: Node[], edges: Edge[]): Node[] {
     Science: '#16a34a',
   }
   const centerStyle = {
-    background: '#c4b5fd',
-    border: '#8b5cf6',
-    color: '#1f2937',
+    background: '#fca5a5',
+    border: '#ef4444',
+    color: '#111827',
   }
 
   const children = new Map<string, string[]>()
