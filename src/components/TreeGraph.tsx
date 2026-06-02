@@ -20,7 +20,7 @@ import {
 } from 'd3-force'
 import { useCallback, useEffect, useMemo, useRef } from 'react'
 import '@xyflow/react/dist/style.css'
-import { applyForceLayout } from '../utils/graphLayout'
+import { applyRadialLayout } from '../utils/graphLayout'
 import { CIRCLE_SIZE, CircleNode } from './CircleNode'
 
 const nodeTypes: NodeTypes = { circle: CircleNode }
@@ -155,10 +155,9 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
   const simulationRef = useRef<Simulation<SimNode, SimLink> | null>(null)
   const simNodesByIdRef = useRef<Map<string, SimNode>>(new Map())
   const styledNodes = useMemo(() => getColoredNodes(rawNodes, edges), [rawNodes, edges])
-  const nonDualityNodeId = useMemo(() => getNonDualityNodeId(styledNodes), [styledNodes])
   const initialLayout = useMemo(
-    () => applyForceLayout(styledNodes, edges, nonDualityNodeId),
-    [styledNodes, edges, nonDualityNodeId],
+    () => applyRadialLayout(styledNodes, edges),
+    [styledNodes, edges],
   )
   const [nodes, setNodes, onNodesChange] = useNodesState(initialLayout)
 
@@ -193,7 +192,7 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
       .force('charge', forceManyBody().strength(-520))
       .force('collide', forceCollide(CIRCLE_SIZE * 0.85))
       .force('center', forceCenter(0, 0))
-      .alpha(1)
+      .alpha(0)
       .alphaDecay(0.03)
       .on('tick', () => {
         setNodes((currentNodes) =>
