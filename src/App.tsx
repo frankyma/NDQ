@@ -259,7 +259,19 @@ const nodes: Node[] = [
   {
     id: "45",
     type: "circle",
-    data: { label: "Panpsychism and Solipsism" },
+    data: { label: "Adjacent Philosophies" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "46",
+    type: "circle",
+    data: { label: "Panpsychism" },
+    position: { x: 0, y: 0 },
+  },
+  {
+    id: "47",
+    type: "circle",
+    data: { label: "Solipsism" },
     position: { x: 0, y: 0 },
   },
 ];
@@ -308,6 +320,8 @@ const edges: Edge[] = [
   { id: "e11-43", source: "11", target: "43" },
   { id: "e11-44", source: "11", target: "44" },
   { id: "e11-45", source: "11", target: "45" },
+  { id: "e45-46", source: "45", target: "46" },
+  { id: "e45-47", source: "45", target: "47" },
 ];
 
 function App() {

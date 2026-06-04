@@ -1,0 +1,1 @@
+Consciousness is fundamental — not produced by matter, but a basic feature of reality. Rather than explaining how matter produces mind, the question becomes how mind produces the *appearance* of matter.
