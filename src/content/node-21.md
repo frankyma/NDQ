@@ -1,6 +1,6 @@
 _All the Buddhas and all sentient beings are nothing but the One Mind, beside which nothing exists._
 
-- The Zen Teaching of Huang Po: On the Transmission of Mind
+― The Zen Teaching of Huang Po: On the Transmission of Mind
 
 Where Madhyamaka examines the nature of objects, Yogacara shifts the question: what is actually present in experience?
 

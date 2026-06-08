@@ -43,19 +43,19 @@ const nodes: Node[] = [
   {
     id: "7",
     type: "circle",
-    data: { label: "Christian Mysticism [AI]" },
+    data: { label: "Christian Mysticism" },
     position: { x: 0, y: 0 },
   },
   {
     id: "8",
     type: "circle",
-    data: { label: "Sufism [AI]" },
+    data: { label: "Sufism" },
     position: { x: 0, y: 0 },
   },
   {
     id: "9",
     type: "circle",
-    data: { label: "Biology [AI]" },
+    data: { label: "Biology" },
     position: { x: 0, y: 0 },
   },
   {
@@ -233,12 +233,6 @@ const nodes: Node[] = [
     position: { x: 0, y: 0 },
   },
   {
-    id: "41",
-    type: "circle",
-    data: { label: "Physics Quotes" },
-    position: { x: 0, y: 0 },
-  },
-  {
     id: "42",
     type: "circle",
     data: { label: "Hard Problem of Consciousness" },
@@ -315,7 +309,6 @@ const edges: Edge[] = [
   { id: "e10-38", source: "10", target: "38" },
   { id: "e10-39", source: "10", target: "39" },
   { id: "e10-40", source: "10", target: "40" },
-  { id: "e10-41", source: "10", target: "41" },
   { id: "e11-42", source: "11", target: "42" },
   { id: "e11-43", source: "11", target: "43" },
   { id: "e11-44", source: "11", target: "44" },
