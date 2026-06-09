@@ -270,7 +270,7 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
       minZoom={0.2}
       fitView
     >
-      <Controls />
+      <Controls showInteractive={false} />
       <Background />
     </ReactFlow>
   );
