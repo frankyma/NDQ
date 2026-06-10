@@ -1,11 +1,12 @@
 import type { Edge, Node } from "@xyflow/react";
 import { CIRCLE_SIZE } from "../components/CircleNode";
 
-const BASE_RADIUS_STEP = 220;
+const BASE_RADIUS_STEP = 120;
 const HALF = CIRCLE_SIZE / 2;
-const NODE_GAP = 24;
+const NODE_GAP = 12;
 const MIN_CENTER_DISTANCE = CIRCLE_SIZE + NODE_GAP;
-const RING_SCALE_STEP = 16;
+const RING_SCALE_STEP = 4;
+const ANGLE_WEIGHT_BLEND = 0.5;
 
 type Polar = { angle: number; radius: number };
 
@@ -122,21 +123,20 @@ function computeRadialAngles(
 
       const { start, end } = sectors.get(id)!;
       const sectorWidth = end - start;
-      const totalLeaves = kids.reduce(
-        (sum, kid) => sum + (leafCounts.get(kid) ?? 1),
-        0,
+      const weights = kids.map(
+        (kid) => ANGLE_WEIGHT_BLEND * (leafCounts.get(kid) ?? 1) + (1 - ANGLE_WEIGHT_BLEND),
       );
+      const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
       let offset = start;
 
-      for (const kid of kids) {
-        const kidLeaves = leafCounts.get(kid) ?? 1;
-        const kidSectorWidth = (kidLeaves / totalLeaves) * sectorWidth;
+      kids.forEach((kid, index) => {
+        const kidSectorWidth = (weights[index] / totalWeight) * sectorWidth;
         angles.set(kid, offset + kidSectorWidth / 2);
         sectors.set(kid, { start: offset, end: offset + kidSectorWidth });
         assigned.add(kid);
         next.push(kid);
         offset += kidSectorWidth;
-      }
+      });
     }
     frontier = next;
   }
@@ -149,49 +149,43 @@ function computeRadialAngles(
   return angles;
 }
 
-function assignDepthRingLayout(
+function assignEvenRingLayout(
   nodeIds: string[],
   angles: Map<string, number>,
   depths: Map<string, number>,
   rootId: string,
-  outerRadius: number,
+  ringStep: number,
 ): Map<string, Polar> {
-  const maxDepth = Math.max(...depths.values(), 1);
   const polar = new Map<string, Polar>();
 
   for (const id of nodeIds) {
     const depth = depths.get(id) ?? 1;
     const angle = angles.get(id) ?? 0;
-    const radius = depth === 0 ? 0 : (depth / maxDepth) * outerRadius;
-    polar.set(id, { angle, radius });
+    polar.set(id, { angle, radius: depth * ringStep });
   }
 
   polar.set(rootId, { angle: angles.get(rootId) ?? 0, radius: 0 });
   return polar;
 }
 
-function resolveWithUniformRings(
+// Uses a single, evenly-spaced radius step across every depth so the gap from
+// the center to each successive ring is constant. The step grows until no nodes
+// overlap, keeping the layout as compact as possible.
+function resolveEvenRings(
   nodeIds: string[],
   angles: Map<string, number>,
   depths: Map<string, number>,
   rootId: string,
 ): Map<string, Polar> {
-  const maxDepth = Math.max(...depths.values(), 1);
-  let outerRadius = maxDepth * BASE_RADIUS_STEP;
+  let ringStep = BASE_RADIUS_STEP;
 
-  for (let i = 0; i < 80; i++) {
-    const polar = assignDepthRingLayout(
-      nodeIds,
-      angles,
-      depths,
-      rootId,
-      outerRadius,
-    );
+  for (let pass = 0; pass < 400; pass++) {
+    const polar = assignEvenRingLayout(nodeIds, angles, depths, rootId, ringStep);
     if (countOverlaps(nodeIds, polar) === 0) return polar;
-    outerRadius += RING_SCALE_STEP;
+    ringStep += RING_SCALE_STEP;
   }
 
-  return assignDepthRingLayout(nodeIds, angles, depths, rootId, outerRadius);
+  return assignEvenRingLayout(nodeIds, angles, depths, rootId, ringStep);
 }
 
 export function applyRadialLayout(nodes: Node[], edges: Edge[]): Node[] {
@@ -203,7 +197,7 @@ export function applyRadialLayout(nodes: Node[], edges: Edge[]): Node[] {
   const nodeIds = nodes.map((node) => node.id);
   const angles = computeRadialAngles(nodes, edges, rootId);
   const depths = computeDepths(rootId, nodes, edges);
-  const resolved = resolveWithUniformRings(nodeIds, angles, depths, rootId);
+  const resolved = resolveEvenRings(nodeIds, angles, depths, rootId);
 
   return nodes.map((node) => ({
     ...node,

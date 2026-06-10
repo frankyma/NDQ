@@ -269,6 +269,7 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
       nodesDraggable
       minZoom={0.2}
       fitView
+      fitViewOptions={{ padding: 0.15 }}
     >
       <Controls showInteractive={false} />
       <Background />
