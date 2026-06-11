@@ -14,4 +14,6 @@ Try this experiment (credits to Sam Harris): Close your eyes, count three second
 
 It's easy to feel this conclusion to be pessimistic. Far from it — letting go of a traditional free will offers a great deal of freedom.
 
-For one, it lets us hold far more compassion for others. We see that all of us act out of the causes and conditions of our past. Furthermore, ur minds still retain agency: the agency to recognize how its been shaped by that past, and to use the tools at its disposal to shape a better future.
+For one, it lets us hold far more compassion for others. We see that all of us act out of the causes and conditions of our past.
+
+Furthermore, our mind still retain agency: the agency to recognize how it's been formed by that past, and to use the tools at its disposal to shape a better future.

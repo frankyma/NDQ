@@ -11,8 +11,8 @@ While most are familiar with the 4 noble truths:
 
 Many don't realize this is part of the more fundamental teachings of reality: Three Marks of Existence
 
-- Duhkha - Suffering (expaneded in the 4 Noble Truths)
+- Duhkha - Suffering (expanded in the 4 Noble Truths)
 - Anitya - Impermanence
 - Anatman - No Self
 
-Anatman, or No Self is the first foray into Buddhist Non-duality. Here recognize that the permanent, separate "I" we typically identify with, is an illusion.
+Anatman, or No Self, is the first foray into Buddhist Non-duality. Here we recognize that the permanent, separate "I" we typically identify with is an illusion.

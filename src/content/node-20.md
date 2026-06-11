@@ -18,6 +18,6 @@ It's important to emphasize that Nagarjuna is not advocating nihilism, or "nothi
 - **Relative truth**: things exist and function in everyday experience — tables, people, cause and effect
 - **Ultimate truth**: examined closely, nothing exists with inherent, independent self-nature
 
-Madhyamaka, or "The Middle Way", holds both truths simultaneously. Conventional reality is not denied, and all objects are dependently arisen in relation to others
+Madhyamaka, or "The Middle Way", holds both truths simultaneously. Conventional reality is not denied, and all objects are dependently arisen in relation to others.
 
 This emptiness dissolves the boundary between self and other, and ultimately subject and object. Neither the observer nor the observed possesses inherent self-nature, and ultimate duality collapses.

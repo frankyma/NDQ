@@ -6,6 +6,6 @@ It's important to know that the Buddha did not strictly teach that there is no s
 
 ## Advaita Vedanta
 
-It is true that most dualistic schools of Hinduism do believe in an eternal self, the Atman. However, Advaita (non-dual) Vedanta collapses the duality between the Atman (eternal self) and Brahman (ultimate consciousness). This means the self is not anything that might appear as an object to consciousness, same as the Buddhist proposition, nor as a entity separate from anything else.
+It is true that most dualistic schools of Hinduism do believe in an eternal self, the Atman. However, Advaita (non-dual) Vedanta collapses the duality between the Atman (eternal self) and Brahman (ultimate consciousness). This means the self is not anything that might appear as an object to consciousness, same as the Buddhist proposition, nor an entity separate from anything else.
 
 The ground of the self is equal to the ground of all existence, which is Sat-chit-ananda (Existence consciousness bliss). This concept of the ground is also found in Vajrayana Buddhism and Christian mysticism.

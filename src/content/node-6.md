@@ -8,7 +8,7 @@ Three foundational texts:
 
 Key Terminology:
 
-- **Brahman**: the supreme, ultimate reality that is the ground of all existence. Loosly maps to "God" in the Western language.
+- **Brahman**: the supreme, ultimate reality that is the ground of all existence. Loosely maps to "God" in Western traditions.
 - **Ātman**: the innermost self, beneath our body-mind
-- **Māyā**: the illusion of that creates this phenomenological and separate world.
+- **Māyā**: the illusion that creates this phenomenal and separate world.
 - **Moksha**: liberation — the direct recognition of one's true nature

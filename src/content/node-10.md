@@ -6,4 +6,4 @@ Physics at the highest level is the study of reality. Where did we come from? Wh
 
 Philosophers have tried to climb this mountain through thought. Physics has tried to scale this through experiments on the real world.
 
-Physics cannot "prove" non-duality. In fact, no conscious reasoning can. That is the nature of truth, it cannot be captured by concepts. However, our study of sciences can help us see where our current beliefs are faulty and contradictory, and point us towards the truth.
+Physics cannot "prove" non-duality. In fact, no conscious reasoning can. That is the nature of truth: it cannot be captured by concepts. However, our study of sciences can help us see where our current beliefs are faulty and contradictory, and point us towards the truth.

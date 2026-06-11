@@ -151,7 +151,7 @@ const nodes: Node[] = [
   {
     id: "27",
     type: "circle",
-    data: { label: "Presense of God" },
+    data: { label: "Presence of God" },
     position: { x: 0, y: 0 },
   },
   {

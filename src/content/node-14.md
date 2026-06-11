@@ -10,4 +10,4 @@
 
 Vajrayana, or The Diamond Vehicle, is a tantric form of Buddhism primarily practiced in Tibet.
 
-The philosophy develops beyond the void proposed by nagarajuna, proposing a luminous presence underlying ultimate reality.
+The philosophy develops beyond the Nagarjuna's void, proposing a luminous presence underlying ultimate reality.
