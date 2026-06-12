@@ -1,7 +1,7 @@
 > _All sentient beings are buddhas, but they are covered by temporary obscurations.  
 > When these are removed, they are truly buddhas enlightened._
 >
-> -- Tulku Urgyen, As It Is, Volume I: Essential Teachings from the Dzogchen Perspective
+> - Tulku Urgyen, As It Is, Volume I: Essential Teachings from the Dzogchen Perspective
 
 Dzogchen — "Great Perfection" — is the highest teaching in the Nyingma school of Tibetan Buddhism. It points directly to the nature of mind without relying on gradual cultivation or preliminary stages.
 

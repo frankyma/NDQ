@@ -1,4 +1,11 @@
-Advaita Vedanta is the non-dual school of Vedanta. Advaita means not two.
+> _We are not designed for fulfillment in the limited. And it's not a fault.  
+> It's not a manufacturing defect. It's a sign of our innate greatness that we are infinite actually.  
+> And that's why anything short of the limitless will not fulfill us.
+> Anything short of the transcendent will not fulfill us._
+
+> \- Swami Sarvapriyananda
+
+Vedanta is the non-dual school of Vedanta. Advaita means not two.
 
 It teaches that the individual self (Atman) and the absolute reality (Brahman) are one and the same.
 

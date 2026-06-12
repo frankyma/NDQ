@@ -1,3 +1,10 @@
+> _Lead me from the unreal to the real\
+> Lead me from darkness to light\
+> Lead me from death to immortality\
+> Om Peace, Peace, Peace_
+
+\- Pavamana Mantra
+
 Vedanta is a major philosophical school of Hinduism based on the end verses of the Vedas (the oldest, foundational scriptures of Hinduism). These sections are also known as the Upanishads.
 
 Three foundational texts:
