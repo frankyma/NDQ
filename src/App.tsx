@@ -91,31 +91,31 @@ const nodes: Node[] = [
   {
     id: "15",
     type: "circle",
-    data: { label: "Form (Rupa)" },
+    data: { label: "Form" },
     position: { x: 0, y: 0 },
   },
   {
     id: "16",
     type: "circle",
-    data: { label: "Feeling (Vedana)" },
+    data: { label: "Feeling" },
     position: { x: 0, y: 0 },
   },
   {
     id: "17",
     type: "circle",
-    data: { label: "Perception (Sanna)" },
+    data: { label: "Perception" },
     position: { x: 0, y: 0 },
   },
   {
     id: "18",
     type: "circle",
-    data: { label: "Mental Formations (Samskara)" },
+    data: { label: "Mental Formations" },
     position: { x: 0, y: 0 },
   },
   {
     id: "19",
     type: "circle",
-    data: { label: "Consciousness (Vijnana)" },
+    data: { label: "Consciousness" },
     position: { x: 0, y: 0 },
   },
   {
