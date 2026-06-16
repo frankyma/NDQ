@@ -1,6 +1,7 @@
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -58,7 +59,7 @@ export function AboutPage() {
             }}
           >
             <Typography>
-              Hi, My name is Frank, and I’ve been a Spiritual seeker for almost
+              Hi, my name is Frank, and I’ve been a spiritual seeker for almost
               15 years. I started back in college when I had some extra time and
               was curious about self-improvement.
             </Typography>
@@ -67,21 +68,22 @@ export function AboutPage() {
               I remember a pro poker player and a YouTube dating coach both
               mentioning meditation, and I thought, "If it can help my poker
               game and be less nervous talking to girls, let's give it a shot."
-              It's stuck with me since.
+              I'm far from a poker pro, and am still pretty lousy at dating, but
+              the meditation has stuck and deepened over time.
             </Typography>
 
             <Typography>
-              During this time, I've Done many silent meditation retreats as
-              short as a day to week+. I've even lived at meditation centers,
-              the longest being the San Francisco Zen Center for six months
-              (During this time, I had a day job, but I would live at the center
-              and meditate in the morning and evenings).
+              During this time, I've done many silent meditation retreats
+              ranging from a single day to a week or more. I've even lived at
+              meditation centers, the longest being the San Francisco Zen Center
+              for six months (I had a day job, but would live at the center and
+              meditate/study with the sanghain the morning and evenings).
             </Typography>
 
             <Typography>
               I've had a range of teachers and practices. The majority Buddhist,
-              but as my curiosity expanded, I've also gone into Advaita Vedanta
-              and general non-dualism.
+              but as my curiosity expanded, I've also gone into other non-dual
+              schools of thought, including Advaita Vedanta and mysticism.
             </Typography>
 
             <Typography>
@@ -93,7 +95,16 @@ export function AboutPage() {
 
             <Typography>
               I'm currently trying to incorporate more devotional practice and
-              feeling the presence of God.
+              to abide in the presence of God.
+            </Typography>
+
+            <Typography>
+              This website is a collection of wisdom I've come across. It's far
+              from complete; please share any feedback:{" "}
+              <Link href="mailto:nondualquarks@gmail.com">
+                nondualquarks@gmail.com
+              </Link>
+              .
             </Typography>
 
             <Typography
