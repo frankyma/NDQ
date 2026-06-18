@@ -1,6 +1,6 @@
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 
-export const CIRCLE_SIZE = 145;
+export const CIRCLE_SIZE = 170;
 
 export function CircleNode({ data }: NodeProps) {
   const label = data.label as string;
@@ -23,7 +23,7 @@ export function CircleNode({ data }: NodeProps) {
         fontWeight: 600,
         lineHeight: 1.15,
         textAlign: "center",
-        padding: 4,
+        padding: 12,
         boxSizing: "border-box",
         cursor: "pointer",
       }}

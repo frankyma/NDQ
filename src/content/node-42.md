@@ -1,6 +1,6 @@
 _Our minds are limited, everything external will be limited. But our awareness can know itself prior to the limitations of the mind, and that’s true knowledge._ - Unknown
 
-In 1994, philosopher David Chalmers coined the term the hard problem of consciousness as the problem of how the brain gives rise to an inner experience. This was a tongue-in-cheek contrast between the "easy" problem of consciousness, which is how brain activities map to mental processes (problem solving, memory, decision making, etc).
+In 1994, philosopher David Chalmers coined the term "The Hard Problem of Consciousness" as the problem of how the brain gives rise to an inner experience. This was a tongue-in-cheek contrast between the "easy" problem of consciousness, which is how brain activities map to mental processes (problem solving, memory, decision making, etc).
 
 We deem this a hard problem because there seems to be an explanatory gap between physical processes (electronic and chemical processes in the brain) and an inner experience. How can non-conscious matter suddenly produce consciousness? Why does information processing _feel_ like something from the inside?
 

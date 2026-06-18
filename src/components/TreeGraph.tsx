@@ -2,7 +2,6 @@ import {
   ReactFlow,
   ReactFlowProvider,
   Controls,
-  Background,
   useNodesState,
   type Node,
   type Edge,
@@ -272,7 +271,6 @@ function Graph({ nodes: rawNodes, edges, onNodeClick }: TreeGraphProps) {
       fitViewOptions={{ padding: 0.15 }}
     >
       <Controls showInteractive={false} />
-      <Background />
     </ReactFlow>
   );
 }
