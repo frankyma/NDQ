@@ -68,8 +68,8 @@ export function AboutPage() {
               I remember a pro poker player and a YouTube dating coach both
               mentioning meditation, and I thought, "If it can help my poker
               game and be less nervous talking to girls, let's give it a shot."
-              I'm far from a poker pro, and am still pretty lousy at dating, but
-              the meditation has stuck and deepened over time.
+              I'm far from a poker pro, and am still pretty hopeless with women,
+              but the meditation has stuck and deepened over time.
             </Typography>
 
             <Typography>
