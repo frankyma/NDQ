@@ -6,6 +6,7 @@ import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import PersonIcon from "@mui/icons-material/Person";
+import { fonts, zenColors } from "../theme";
 
 export function AboutPage() {
   return (
@@ -16,25 +17,25 @@ export function AboutPage() {
         px: 2,
         py: { xs: 9, sm: 12 },
         background:
-          "linear-gradient(180deg, #eef2f9 0%, #f7f9fc 45%, #ffffff 100%)",
+          "linear-gradient(180deg, #e9eff5 0%, #f1f5f9 50%, #ffffff 100%)",
       }}
     >
       <Container maxWidth="lg" disableGutters>
         <Paper
           elevation={0}
           sx={{
-            maxWidth: 960,
+            maxWidth: 860,
             mx: "auto",
             p: { xs: 3, sm: 6 },
             borderRadius: 4,
             border: "1px solid",
             borderColor: "divider",
-            boxShadow: "0 12px 40px rgba(15, 23, 42, 0.06)",
+            boxShadow: "0 16px 48px rgba(39, 49, 58, 0.07)",
           }}
         >
           <Stack
-            spacing={1.5}
-            sx={{ mb: 4, alignItems: "center", textAlign: "center" }}
+            spacing={2}
+            sx={{ mb: 4.5, alignItems: "center", textAlign: "center" }}
           >
             <Avatar
               variant="rounded"
@@ -42,20 +43,47 @@ export function AboutPage() {
               alt="Frank"
               sx={{
                 width: 420,
+                maxWidth: "100%",
                 height: 280,
-                bgcolor: "#eef2f9",
-                color: "#9aa7bd",
-                boxShadow: "0 8px 24px rgba(15, 23, 42, 0.12)",
+                borderRadius: 3,
+                bgcolor: "#e3eaf2",
+                color: zenColors.muted,
+                boxShadow: "0 10px 30px rgba(39, 49, 58, 0.14)",
               }}
             >
               <PersonIcon sx={{ fontSize: 120 }} />
             </Avatar>
+            <Typography
+              component="h1"
+              sx={{
+                fontFamily: fonts.serif,
+                fontSize: { xs: 32, sm: 40 },
+                fontWeight: 500,
+                letterSpacing: "-0.01em",
+                color: zenColors.ink,
+              }}
+            >
+              About
+            </Typography>
+            <Box
+              sx={{
+                width: 44,
+                height: 3,
+                borderRadius: 999,
+                backgroundColor: zenColors.accent,
+              }}
+            />
           </Stack>
 
           <Stack
             spacing={2.5}
             sx={{
-              "& p": { fontSize: 17, lineHeight: 1.8, color: "text.primary" },
+              "& p": {
+                fontFamily: fonts.sans,
+                fontSize: 17,
+                lineHeight: 1.85,
+                color: zenColors.ink,
+              },
             }}
           >
             <Typography>
@@ -101,14 +129,27 @@ export function AboutPage() {
             <Typography>
               This website is a collection of wisdom I've come across. It's far
               from complete; please share any feedback:{" "}
-              <Link href="mailto:nondualquarks@gmail.com">
+              <Link
+                href="mailto:nondualquarks@gmail.com"
+                sx={{
+                  color: zenColors.accent,
+                  textDecorationColor: zenColors.accentSoft,
+                  textUnderlineOffset: "2px",
+                }}
+              >
                 nondualquarks@gmail.com
               </Link>
               .
             </Typography>
 
             <Typography
-              sx={{ fontStyle: "italic", color: "text.secondary", pt: 1 }}
+              sx={{
+                fontFamily: `${fonts.serif} !important`,
+                fontStyle: "italic",
+                fontSize: "20px !important",
+                color: `${zenColors.muted} !important`,
+                pt: 1,
+              }}
             >
               Frank
             </Typography>
