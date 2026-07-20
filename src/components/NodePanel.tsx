@@ -8,8 +8,6 @@ import ReactMarkdown from "react-markdown";
 import { NODE_CONTENT } from "../content";
 import { fonts, zenColors } from "../theme";
 
-const DRAWER_WIDTH = 480;
-
 interface NodePanelProps {
   node: Node | null;
   onClose: () => void;
@@ -26,7 +24,7 @@ export function NodePanel({ node, onClose }: NodePanelProps) {
       slotProps={{
         paper: {
           sx: {
-            width: DRAWER_WIDTH,
+            width: "50vw",
             maxWidth: "100vw",
             px: 5,
             py: 4.5,
