@@ -274,6 +274,12 @@ const nodes: Node[] = [
     data: { label: "Plant Science" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "49",
+    type: "circle",
+    data: { label: "The Split-Brain Experiment" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -322,6 +328,7 @@ const edges: Edge[] = [
   { id: "e45-46", source: "45", target: "46" },
   { id: "e45-47", source: "45", target: "47" },
   { id: "e9-48", source: "9", target: "48" },
+  { id: "e9-49", source: "9", target: "49" },
 ];
 
 export function CanvasPage() {
