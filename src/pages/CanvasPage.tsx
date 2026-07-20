@@ -268,6 +268,12 @@ const nodes: Node[] = [
     data: { label: "Solipsism" },
     position: { x: 0, y: 0 },
   },
+  {
+    id: "48",
+    type: "circle",
+    data: { label: "Plant Science" },
+    position: { x: 0, y: 0 },
+  },
 ];
 
 const edges: Edge[] = [
@@ -315,6 +321,7 @@ const edges: Edge[] = [
   { id: "e11-45", source: "11", target: "45" },
   { id: "e45-46", source: "45", target: "46" },
   { id: "e45-47", source: "45", target: "47" },
+  { id: "e9-48", source: "9", target: "48" },
 ];
 
 export function CanvasPage() {
