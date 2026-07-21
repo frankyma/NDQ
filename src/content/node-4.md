@@ -1,0 +1,1 @@
+Science is our most rigorous way of asking what the world is made of and how it works. Followed carefully, though, it often does something unexpected: it undermines the picture of a solid, separate, mind-independent reality that we started with. Biology, physics, and philosophy each press on a different seam until that picture starts to give.
