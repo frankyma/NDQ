@@ -105,7 +105,7 @@ export function AboutPage() {
               ranging from a single day to a week or more. I've even lived at
               meditation centers, the longest being the San Francisco Zen Center
               for six months (I had a day job, but would live at the center and
-              meditate/study with the sanghain the morning and evenings).
+              meditate/study with the sangha in the morning and evenings).
             </Typography>
 
             <Typography>
