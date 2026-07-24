@@ -12,7 +12,7 @@ export const zenColors = {
 };
 
 export const fonts = {
-  serif: '"Fraunces", Georgia, "Times New Roman", serif',
+  serif: '"Source Serif 4", Georgia, "Times New Roman", serif',
   sans: '"Inter", system-ui, -apple-system, "Segoe UI", sans-serif',
 };
 
