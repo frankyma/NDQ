@@ -1,11 +1,9 @@
-import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import PersonIcon from "@mui/icons-material/Person";
 import { fonts, zenColors } from "../theme";
 
 export function AboutPage() {
@@ -37,22 +35,19 @@ export function AboutPage() {
             spacing={2}
             sx={{ mb: 4.5, alignItems: "center", textAlign: "center" }}
           >
-            <Avatar
-              variant="rounded"
-              src="/headshot.jpeg"
+            <Box
+              component="img"
+              src="/hs2.jpeg"
               alt="Frank"
               sx={{
                 width: 420,
                 maxWidth: "100%",
-                height: 280,
-                borderRadius: 3,
-                bgcolor: "#e3eaf2",
-                color: zenColors.muted,
+                height: "auto",
+                display: "block",
+                borderRadius: 1,
                 boxShadow: "0 10px 30px rgba(39, 49, 58, 0.14)",
               }}
-            >
-              <PersonIcon sx={{ fontSize: 120 }} />
-            </Avatar>
+            />
             <Typography
               component="h1"
               sx={{
