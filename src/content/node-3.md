@@ -1,0 +1,1 @@
+Religion points toward the sacred — through belief, practice, community, and devotion. At its surface it often speaks of a God apart from the world, and a self apart from God. Look deeper into its mystical streams, and that distance begins to close. What remains is not a second reality beside the Divine, but the recognition that nothing stands apart from it.
