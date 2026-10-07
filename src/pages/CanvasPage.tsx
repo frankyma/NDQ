@@ -47,12 +47,6 @@ const nodes: Node[] = [
     position: { x: 0, y: 0 },
   },
   {
-    id: "8",
-    type: "circle",
-    data: { label: "Sufism" },
-    position: { x: 0, y: 0 },
-  },
-  {
     id: "9",
     type: "circle",
     data: { label: "Biology" },
@@ -289,7 +283,6 @@ const edges: Edge[] = [
   { id: "e2-5", source: "2", target: "5" },
   { id: "e2-6", source: "2", target: "6" },
   { id: "e3-7", source: "3", target: "7" },
-  { id: "e3-8", source: "3", target: "8" },
   { id: "e4-9", source: "4", target: "9" },
   { id: "e4-10", source: "4", target: "10" },
   { id: "e4-11", source: "4", target: "11" },
